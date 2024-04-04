@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js"defer></script>
+</head>
+<body>
+    <h1>Bienvenido <b>AVENTURERO</b></h1>
+    <label for="nombre">Ingresa tu nombre:</label>
+    <input type="text" id="nombre" required>
+    <button onclick="verificarNombre()">Verificar</button>
+    <p id="mensaje1"></p>
+
+    <label for="clases">Selecciona tu <b>clase:</b></label>
+    <select name="clase" id="clases">
+        <option value="Mago" data-tooltip= >Mago</option>
+        <option value="Guerrero" data-tooltip=>Guerrero</option>
+        <option value="Arquero" data-tooltip=>Arquero</option>
+        <option value="Ladron" data-tooltip=>Ladron</option>
+    </select>
+    <div id="tooltip"></div>
+    <button onclick="claseSeleccionada()">Seleccionar</button>
+    <p id="mensaje2"></p>
+
+    <label for="mascotas">Selecciona a tu <b>compañero</b></label>
+    <select name="mascota" id="mascotas">
+        <option value="Gato rúnico">Gato rúnico</option>
+        <option value="Buitre mensajero">Buitre mensajero</option>
+        <option value="Elefante escudero">Elefante escudero</option>
+        <option value="Hurón espadachin">Hurón espadachin</option>
+    </select>
+    <button onclick="mascotaSeleccionada()">Tú seras mi compañero</button>
+    <p id="mensaje3"></p>
+
+    <label for="nombre2">Su nombre será:</label>
+    <input type="text" id="nombre2" required>
+    <button onclick="nombreMascota()">Listo</button>
+    <p id="mensaje4"></p>
+</body>
+</html>
